@@ -1,0 +1,38 @@
+:root {
+  --color-paper: #f2f0e9;
+  --color-ink: #191919;
+  --color-muted: #6e6e73;
+  --color-rule: #c9c8c3;
+  --color-accent: #193cf5;
+  --color-accent-hover: #112cc4;
+  --color-accent-soft: #e6e8f7;
+  --color-on-accent: #ffffff;
+  --color-on-accent-hover: #ffffff;
+  --font-display: 'Bodoni Moda Variable', 'Bodoni MT', Georgia, serif;
+  --font-body: 'Inter Variable', Inter, Arial, sans-serif;
+  --text-micro: 0.6875rem;
+  --text-label: 0.75rem;
+  --text-small: 0.875rem;
+  --text-body: 1rem;
+  --text-lead: clamp(1.125rem, 1.5vw, 1.5rem);
+  --text-title: clamp(3rem, 5.5vw, 6.25rem);
+  --text-hero: clamp(4rem, 7.35vw, 8rem);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --page-gutter: clamp(1.5rem, 4.5vw, 5rem);
+  --content-max: 1600px;
+  --radius: 0;
+  --rule: 1px solid var(--color-rule);
+  --duration-fast: 160ms;
+  --duration-enter: 320ms;
+  --ease-out: cubic-bezier(.2, .7, .2, 1);
+}
