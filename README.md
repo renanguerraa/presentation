@@ -45,7 +45,7 @@ O workflow `.github/workflows/deploy-pages.yml` publica automaticamente a branch
 
 `https://renanguerraa.github.io/presentation/`
 
-No GitHub, abra **Settings → Pages** e selecione **GitHub Actions** em **Source**. Depois disso, cada `git push origin main` cria uma nova versão do site.
+O workflow habilita o GitHub Pages usando o GitHub Actions na primeira execução. Depois disso, cada `git push origin main` cria uma nova versão do site. Caso a conta ou organização bloqueie a habilitação automática, abra **Settings → Pages** e selecione **GitHub Actions** em **Source**.
 
 ## Escopo da v0
 
