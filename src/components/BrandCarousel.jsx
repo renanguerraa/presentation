@@ -37,7 +37,7 @@ export function BrandCarousel({ labels }) {
     <div className="brand-carousel-stage">
       <ol className="brand-carousel-track" key={index}>
         {orderedBrands.map((brandIndex, position) => <li className={`brand-carousel-item ${position === 1 ? 'is-active' : ''}`} key={brandIndex} aria-current={position === 1 ? 'true' : undefined}>
-          <img className="brand-carousel-logo" src={`/brands/${images[brandIndex]}`} alt={brands[brandIndex]} width="180" height="72" />
+          <img className="brand-carousel-logo" src={`${import.meta.env.BASE_URL}brands/${images[brandIndex]}`} alt={brands[brandIndex]} width="180" height="72" />
         </li>)}
       </ol>
     </div>

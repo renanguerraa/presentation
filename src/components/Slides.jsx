@@ -41,7 +41,7 @@ export function CurrentCompany({ t, go }) {
   const d = t.current;
   const logos = [
     'https://cdn.worldvectorlogo.com/logos/ze-delivery-logo.svg',
-    '/brands/tada-delivery.png',
+    `${import.meta.env.BASE_URL}brands/tada-delivery.png`,
   ];
   return <div className="editorial-grid current-company"><section><Eyebrow>04 / {d.current}</Eyebrow><DisplayTitle title={d.title} accent={d.accent} id="slide-title" /><p className="person-name">{d.intro}</p><p className="muted">{d.role}</p><p className="lead company-summary">{d.summary}</p></section><div className="project-choices">{d.projects.map(([title, text], i) => <div key={title} className="project-choice"><Eyebrow>0{i + 1} / AB InBev</Eyebrow><div className="project-choice-heading"><img className="project-choice-logo" src={logos[i]} alt="" aria-hidden="true" /><span className="project-choice-title">{title}</span></div>{text && <span className="muted">{text}</span>}</div>)}</div></div>;
 }
@@ -60,7 +60,7 @@ export function Project({ t, project, go }) {
 export function PersonalProjects({ t }) {
   const d = t.personal;
   return <div className="editorial-grid personal-projects">
-    <section className="convoca-showcase"><Eyebrow>05 / {t.nav[4].title}</Eyebrow><div className="convoca-brand"><img src="/brands/convoca-logo-ios.png" alt={d.logoAlt} /><DisplayTitle title={d.title} accent="" id="slide-title" inline /></div><AppScreensCarousel labels={d.carousel} /></section>
+    <section className="convoca-showcase"><Eyebrow>05 / {t.nav[4].title}</Eyebrow><div className="convoca-brand"><img src={`${import.meta.env.BASE_URL}brands/convoca-logo-ios.png`} alt={d.logoAlt} /><DisplayTitle title={d.title} accent="" id="slide-title" inline /></div><AppScreensCarousel labels={d.carousel} /></section>
     <section className="convoca-overview">
       <Eyebrow>{d.sectionLabel}</Eyebrow>
       <h2>{d.heading}</h2>

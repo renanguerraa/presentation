@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowLeftIcon, ArrowRightIcon, XIcon } from '@phosphor-icons/react';
 
-const screens = Array.from({ length: 5 }, (_, index) => `/brands/convoca-ios-0${index + 1}.png`);
+const screens = Array.from({ length: 5 }, (_, index) => `${import.meta.env.BASE_URL}brands/convoca-ios-0${index + 1}.png`);
 
 export function AppScreensCarousel({ labels }) {
   const [index, setIndex] = useState(0);

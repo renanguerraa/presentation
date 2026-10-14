@@ -39,6 +39,14 @@ npm run build
 
 O build produz arquivos estáticos em `dist/client`. O template também preserva os arquivos de compatibilidade com Sites em `dist/server` e `dist/.openai`. Nenhuma publicação foi realizada. Antes de publicar via Sites, execute também `npm run test:sites`.
 
+## GitHub Pages
+
+O workflow `.github/workflows/deploy-pages.yml` publica automaticamente a branch `main` em:
+
+`https://renanguerraa.github.io/presentation/`
+
+No GitHub, abra **Settings → Pages** e selecione **GitHub Actions** em **Source**. Depois disso, cada `git push origin main` cria uma nova versão do site.
+
 ## Escopo da v0
 
 Inclui navegação por capítulos e teclado, links diretos, histórico do navegador, idioma persistente, tela cheia, layout responsivo e redução de movimento. Não inclui backend ou editor de conteúdo visual; a edição ocorre no arquivo de dados.
