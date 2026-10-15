@@ -22,19 +22,19 @@ const pt = {
   settings: {
     title: "Configurações",
     presentation: "Apresentação",
-    description: "Ajuste a apresentação para cada conversa.",
+    description: "Escolha o idioma e a cor de destaque.",
     language: "Idioma",
     color: "Cor de destaque",
-    colorHelp: "Escolha a cor da empresa ou cole o código hexadecimal.",
+    colorHelp: "Escolha uma cor ou cole seu código hexadecimal.",
     picker: "Escolher cor de destaque",
     hex: "Código hexadecimal",
-    invalid: "Use seis caracteres de 0 a 9 ou A a F, como #193CF5.",
+    invalid: "Use um código hexadecimal de seis caracteres, como #193CF5.",
     presets: "Sugestões de cores",
     defaultColor: "Azul padrão",
     preview: "Prévia",
-    previewText: "Sua trajetória.",
-    previewAccent: "Sua identidade.",
-    saved: "As preferências ficam salvas neste navegador.",
+    previewText: "Uma apresentação.",
+    previewAccent: "Com a sua cor.",
+    saved: "Idioma e cor são salvos automaticamente neste navegador.",
     reset: "Restaurar azul padrão",
     done: "Concluído",
   },
@@ -64,10 +64,10 @@ const pt = {
     "Sobre mim",
     "Faculdade",
     "ACCT Global",
-    "Próximo capítulo",
+    "Da ACCT à AB InBev",
     "AB InBev",
-    "Projeto 01",
-    "Projeto 02",
+    "Zé Delivery",
+    "TaDa Delivery",
     "Projetos pessoais",
     "Encerramento",
   ],
@@ -75,8 +75,7 @@ const pt = {
     { number: "01", title: "Sobre mim", target: "sobre" },
     {
       number: "02",
-      title: "Como tudo começou",
-      subtitle: "Faculdade",
+      title: "Faculdade",
       target: "faculdade",
     },
     { number: "03", title: "ACCT Global", target: "primeiro-emprego" },
@@ -87,7 +86,7 @@ const pt = {
     first: "Sobre mim.",
     second: "Meu",
     accent: "trabalho.",
-    subtitle: "Pessoas, tecnologia e dados.",
+    subtitle: "Minha experiência em software e os projetos em que atuei.",
   },
   about: {
     title: "Eu, além",
@@ -102,7 +101,7 @@ const pt = {
       ],
       [
         "HOBBIES",
-        "Jogos online, embora hoje eu jogue menos por causa da rotina; cozinhar, musculação e viagens.",
+        "Gosto de jogos online, cozinhar, musculação e viagens. Hoje, jogo com menos frequência por causa da rotina.",
       ],
     ],
   },
@@ -110,20 +109,20 @@ const pt = {
     title: "Minha",
     accent: "formação.",
     intro:
-      "Análise e Desenvolvimento de Sistemas · Faculdade de Tecnologia do Estado de São Paulo (FATEC)",
+      "Análise e Desenvolvimento de Sistemas · FATEC",
     period: "Janeiro de 2019 — dezembro de 2021",
     steps: [
       [
         "A escolha do curso",
-        "Sempre gostei de exatas e pensava em cursar engenharia. O contato com tecnologia por meio dos jogos me levou para a área de TI.",
+        "Sempre gostei de exatas e considerei cursar engenharia. O contato com tecnologia por meio dos jogos me levou a escolher TI.",
       ],
       [
-        "Durante a graduação",
-        "Comecei a estagiar em agosto de 2020, e essa experiência reforçou ainda mais minha vontade de crescer na área de desenvolvimento.",
+        "Primeiro estágio",
+        "Comecei a estagiar em agosto de 2020, ainda na graduação. A experiência reforçou minha vontade de crescer como desenvolvedor.",
       ],
       [
         "De logaritmos a algoritmos",
-        "No primeiro semestre, confundi Algoritmos com logaritmos. No início, não entendia quase nada; com o tempo, me apaixonei por lógica de programação.",
+        "No primeiro semestre, confundi Algoritmos com logaritmos e tive dificuldade nas primeiras aulas. Quando a lógica de programação começou a fazer sentido, passei a gostar da área.",
       ],
     ],
   },
@@ -139,11 +138,11 @@ const pt = {
     rows: [
       [
         "O contexto",
-        "Na ACCT Global, participei de projetos de e-commerce para marcas de diferentes segmentos, atuando em frentes simultâneas e colaborando com Produto, QA e Design.",
+        "Trabalhei em projetos de e-commerce para marcas de diferentes segmentos, em frentes simultâneas e em colaboração com Produto, QA e Design.",
       ],
       [
         "Meu papel",
-        "Arquitetura de funcionalidades, desenvolvimento frontend, testes A/B, deploys e mentoria.",
+        "Atuei na arquitetura de funcionalidades, no desenvolvimento frontend, em testes A/B, deploys e mentoria.",
       ],
       [
         "Conquistas",
@@ -164,16 +163,16 @@ const pt = {
     accent: "mudei de empresa.",
     rows: [
       [
-        "O que levo comigo",
-        "Pensar além do board e olhar para o usuário final: como aproveitar a janela de entrega para levar uma feature ao seu melhor resultado?",
+        "Foco no usuário",
+        "Aprendi a olhar além das tarefas do board e a pensar no resultado de cada funcionalidade para o usuário final.",
       ],
       [
         "Por que mudar",
-        "Eu queria entender o impacto do meu código no produto. Isso era difícil quando, a cada três meses, eu estava em um cliente diferente.",
+        "Queria acompanhar o impacto das minhas entregas no produto. A troca de clientes, em ciclos de cerca de três meses, dificultava esse acompanhamento.",
       ],
       [
-        "O próximo passo",
-        "Entrar em uma empresa de produto para acompanhar os dados e os resultados gerados pelo meu código e pelo meu conhecimento.",
+        "O que eu buscava",
+        "Buscava uma empresa de produto para acompanhar dados, resultados e o impacto das minhas entregas ao longo do tempo.",
       ],
     ],
     destination: "PRÓXIMA EMPRESA",
@@ -185,10 +184,10 @@ const pt = {
     intro: "AB InBev",
     role: "Software Engineer · Desde maio de 2022",
     summary:
-      "Atuo no desenvolvimento e na evolução de produtos de e-commerce B2C, conectando arquitetura, produto e experiência em aplicações web, mobile e backend.",
+      "Desenvolvo produtos de e-commerce B2C em aplicações web, mobile e backend, com foco em arquitetura e experiência do usuário.",
     projects: [
       ["Zé Delivery", "Cerca de 1 ano e 8 meses de atuação."],
-      ["TaDa Delivery", "Iniciei no projeto no início de 2024."],
+      ["TaDa Delivery", "No projeto desde janeiro de 2024."],
     ],
     action: "Conhecer o projeto",
   },
@@ -197,22 +196,22 @@ const pt = {
       title: "Zé",
       accent: "Delivery.",
       description:
-        "Principal produto DTC da AB InBev no Brasil: entrega bebidas geladas em menos de 30 minutos e atende mais de 9 milhões de consumidores por ano.",
+        "Produto de entrega de bebidas da AB InBev no Brasil, com frentes para consumidores e pontos de venda.",
       period: "",
       stages: [
         [
           "Seller · Gestão do ponto de venda",
-          "Atuei no time responsável pela plataforma de gestão do ponto de venda, desenvolvendo funcionalidades de estoque e pagamento online.",
+          "Desenvolvi funcionalidades de estoque e pagamento online na plataforma de gestão dos pontos de venda.",
           "Início · 05/22",
         ],
         [
           "Consumer · Sampling",
-          "Como o ritmo e o contexto B2B de Seller não se encaixavam no que eu buscava, fui para Consumer entregar o Sampling. O projeto durou quase oito meses e permitia que consumidores experimentassem bebidas por R$ 0,01.",
+          "Passei para Consumer para desenvolver o Sampling, que permitia experimentar bebidas por R$ 0,01. Atuei no projeto por quase oito meses.",
           "Início · 01/23",
         ],
         [
           "Seller · Entrega agendada",
-          "Em um projeto de cerca de seis meses, desenvolvi e apoiei o time de Produto na entrega da experiência de entrega agendada para Seller.",
+          "Voltei a Seller para desenvolver a entrega agendada em parceria com Produto, em um projeto de três meses.",
           "Início · 09/23",
         ],
       ],
@@ -225,9 +224,9 @@ const pt = {
         "Jest",
       ],
       achievement: "≈ 4 milhões de requests a menos por semana",
-      evidence: "Revisamos as queries do React Query e configuramos as chaves de cache e o staleTime para reaproveitar respostas sem executar novas chamadas desnecessárias. Comparando semanas com volume de sessões equivalente, os testes apontaram uma redução de quase 4 milhões de requisições ao backend.",
+      evidence: "Ajustamos as chaves de cache e o staleTime no React Query para reutilizar respostas. Em testes que compararam semanas com volume equivalente de sessões, foram quase 4 milhões de requisições a menos ao backend.",
       article: {
-        label: "Ler o artigo no Medium",
+        label: "Como reduzimos requisições com React Query",
         url: "https://medium.com/@renanguerraa_/como-utilizamos-do-cache-a-ponto-de-diminuir-as-requests-em-4-milh%C3%B5es-no-seu-z%C3%A9-ae77450fbd33",
       },
     },
@@ -235,17 +234,17 @@ const pt = {
       title: "TaDa",
       accent: "Delivery.",
       description:
-        "Primeira plataforma DTC global da AB InBev: entrega bebidas em até 30 minutos e alcançou mais de 1 milhão de consumidores em 11 países.",
+        "Plataforma global da AB InBev para compra e entrega de bebidas ao consumidor.",
       period: "",
       stages: [
         [
           "Consumer · Checkout",
-          "Entrei no projeto e permaneci por quase dois anos e meio. Comecei entendendo o novo framework de trabalho e a arquitetura com BFF, evoluí no entendimento do débito técnico de um produto novo e passei a liderar tecnicamente o time. Entre os principais destaques estão a evolução da observabilidade e o apoio constante ao time de Produto com dados de negócio.",
+          "Atuei por quase dois anos e meio no Checkout, da adaptação ao framework e à arquitetura BFF até a liderança técnica do time. Evoluí a observabilidade e apoiei Produto com dados de negócio.",
           "Início · 01/2024",
         ],
         [
           "Consumer · Omnichannel",
-          "Entrei no time para aplicar os padrões de engenharia implementados no Checkout, além de apoiar a arquitetura e a liderança técnica de outras features. Estruturei e compartilhei com o time práticas para usar IA no desenvolvimento, como Cursor Rules, criando contextos mais precisos para reduzir o consumo de tokens e direcionar melhor as tarefas. A evolução da observabilidade continuou entre os principais destaques.",
+          "Passei a aplicar no Omnichannel os padrões de engenharia do Checkout, apoiando arquitetura, liderança técnica e observabilidade. Também estruturei e compartilhei práticas de IA, como Cursor Rules, para fornecer contexto preciso, reduzir o consumo de tokens e direcionar melhor as tarefas.",
           "Início · 03/2026",
         ],
       ],
@@ -256,9 +255,9 @@ const pt = {
         "GraphQL",
         "Jest",
       ],
-      achievement: "De cerca de 4% para 0,3% de pedidos com erro",
+      achievement: "Pedidos com erro: de ≈ 4% para 0,3%",
       evidence:
-        "Com a evolução da IA no projeto, criamos um MCP que integrava ferramentas como New Relic, Amplitude e Jira. A análise cruzada dos dados ajudou a rastrear débitos técnicos na captura de informações e na engenharia, reduzindo a taxa de pedidos com erro de aproximadamente 4% para 0,3%.",
+        "Participei da criação de um MCP que integrava New Relic, Amplitude e Jira. Com apoio de IA, cruzamos dados para rastrear débitos técnicos na captura de dados e na engenharia. Esse trabalho contribuiu para reduzir a taxa de pedidos com erro de aproximadamente 4% para 0,3%.",
     },
   ],
   labels: {
@@ -280,30 +279,30 @@ const pt = {
       slides: [
         {
           title: "Encontrar partidas próximas",
-          description: "O celular obtém a localização do usuário e envia latitude e longitude para a API. No PostgreSQL, o PostGIS usa um índice geográfico para localizar partidas em um raio padrão de 15 km. O banco calcula a distância, ordena os resultados do mais próximo ao mais distante e aplica a paginação. A resposta informa a distância em quilômetros e se o usuário já participa de cada partida.",
+          description: "O app envia a latitude e a longitude do usuário à API. No PostgreSQL, o PostGIS usa um índice geográfico para buscar partidas em um raio padrão de 15 km. Os resultados vêm paginados, do mais próximo ao mais distante, com a distância em quilômetros e a indicação de participação do usuário.",
         },
         {
           title: "Criar partida",
-          description: "O usuário escolhe o esporte, a data, os detalhes e o local da partida no mapa. O endereço selecionado gera latitude e longitude, permitindo que a nova partida seja exibida corretamente no fluxo de descoberta por proximidade.",
+          description: "Ao criar uma partida, o usuário define esporte, data e detalhes e escolhe o local no mapa. O endereço gera as coordenadas de latitude e longitude usadas na busca por partidas próximas.",
         },
         {
           title: "My Account",
-          description: "Na área My Account, o usuário acompanha seus principais indicadores, como total de jogos, partidas criadas, taxa de participação e esportes mais frequentes, tendo uma visão rápida da sua atividade na plataforma.",
+          description: "A área My Account reúne total de jogos, partidas criadas, taxa de participação e esportes mais frequentes.",
         },
         {
           title: "Notificações personalizadas",
-          description: "O usuário escolhe um ou mais esportes e define um raio de 5, 10 ou 15 km. Ao salvar, o aplicativo registra a localização usada na busca e habilita o dispositivo para receber avisos de novas partidas compatíveis dentro da área selecionada. As preferências podem ser alteradas posteriormente nos ajustes do perfil.",
+          description: "O usuário escolhe esportes e um raio de 5, 10 ou 15 km. O app salva a localização e habilita o dispositivo para avisar sobre novas partidas compatíveis na região. As preferências podem ser alteradas nos ajustes do perfil.",
         },
         {
           title: "Chat da partida",
-          description: "Cada partida possui um chat exclusivo para os participantes combinarem os detalhes do jogo. A conversa mantém o histórico de mensagens e oferece recursos de segurança para bloquear jogadores ou denunciar conteúdos inadequados.",
+          description: "O chat de cada partida permite combinar detalhes e consultar o histórico de mensagens. Os participantes também podem bloquear jogadores e denunciar conteúdo inadequado.",
         },
       ],
     },
     sectionLabel: "COMO FUNCIONA O APP",
     heading: "Transformamos vontade de jogar em partidas reais",
     description:
-      "A Convoca é um aplicativo para criar e encontrar partidas esportivas perto de você, convidar pessoas e confirmar presença.",
+      "Na Convoca, você encontra partidas próximas, cria jogos, convida pessoas e confirma presença.",
     stackLabel: "STACK",
     stack: [
       ["Frontend mobile e web", "React Native e React.js"],
@@ -319,32 +318,32 @@ const pt = {
     aiJourney: {
       label: "IA DESDE O MOMENTO ZERO",
       heading: "Da primeira ideia ao lançamento",
-      intro: "A IA participou de todo o processo: ajudou a transformar a ideia em produto, manter contexto entre as etapas e acelerar decisões que iam além do código.",
+      intro: "Usei IA no protótipo, na documentação, no desenvolvimento e na preparação para o lançamento.",
       steps: [
         {
           tool: "Miro AI",
-          title: "Ideia e protótipo inicial",
-          description: "Comecei usando a IA do Miro para transformar a ideia inicial em fluxos e um primeiro protótipo visual.",
+          title: "Fluxos e protótipo",
+          description: "Usei o Miro AI para transformar a ideia em fluxos e em um primeiro protótipo visual.",
         },
         {
           tool: "Codex",
-          title: "Estrutura e contexto",
-          description: "Com as telas esboçadas, planejei a estrutura de dados e gerei arquivos de documentação para dar à IA contexto sobre o produto, as telas e as APIs.",
+          title: "Dados e contexto",
+          description: "Com o Codex, planejei a estrutura de dados e documentei o produto, as telas e as APIs para orientar as próximas etapas.",
         },
         {
           tool: "Skill de Product Design",
-          title: "Design e regras finais",
-          description: "Usei a skill de Product Design para evoluir o protótipo, fechar as telas e consolidar as regras e a documentação de cada feature.",
+          title: "Telas e regras",
+          description: "Refinei as telas com a skill de Product Design e consolidei as regras e a documentação de cada funcionalidade.",
         },
         {
           tool: "Desenvolvimento com IA",
-          title: "Produto em código",
-          description: "Com o produto e os contextos documentados, iniciei o desenvolvimento do aplicativo e das APIs com um fluxo totalmente guiado por IA.",
+          title: "Aplicativo e APIs",
+          description: "Desenvolvi o aplicativo e as APIs com um fluxo guiado por IA, usando o contexto documentado nas etapas anteriores.",
         },
         {
           tool: "Produto e operação",
-          title: "Além do desenvolvimento",
-          description: "Depois do aplicativo, usei a IA para entender hospedagem, registro da marca no INPI e o processo de lançamento nas lojas.",
+          title: "Preparação para o lançamento",
+          description: "Usei IA para entender a hospedagem, o registro da marca no INPI e a publicação nas lojas.",
         },
       ],
     },
@@ -354,15 +353,15 @@ const pt = {
       items: [
         {
           title: "Contexto reduz custo e aumenta precisão",
-          description: "Documentos e rules bem definidos evitam explicações repetidas, preservam a janela de contexto e ajudam a IA a tomar decisões mais alinhadas ao projeto.",
+          description: "Documentação e regras claras reduzem explicações repetidas e ajudam a IA a tomar decisões alinhadas ao projeto.",
         },
         {
           title: "Autonomia precisa de critérios",
-          description: "O resultado final não é a única medida de qualidade. A IA também precisa seguir o processo adequado: primeiro validamos se a solução atende ao objetivo; depois executamos testes e verificações de QA, evitando automações prematuras e consumo desnecessário de tokens.",
+          description: "A autonomia começa com objetivo e critérios de aceite claros. Validar a direção da solução antes de automatizar testes e QA ajuda a evitar retrabalho e consumo desnecessário de tokens.",
         },
         {
           title: "Conhecimento recorrente deve viver no projeto",
-          description: "Comandos frequentes e informações operacionais devem estar registrados em scripts do package.json ou na documentação. Assim, a IA pode se concentrar no problema, em vez de redescobrir como iniciar o projeto, executar testes ou consultar o ambiente.",
+          description: "Registre comandos e informações recorrentes em scripts do package.json ou na documentação. Assim, a IA se concentra no problema sem redescobrir como iniciar o projeto, testar ou consultar o ambiente.",
         },
       ],
     },
@@ -375,9 +374,19 @@ const pt = {
     action: "Início",
   },
   ds: {
-    title: "Uma linguagem.",
-    accent: "Muitas histórias.",
-    intro: "A base visual da apresentação: editorial, clara e intencional.",
+    title: "Base visual",
+    accent: "da apresentação.",
+    intro: "Tokens, tipografia e componentes usados nesta apresentação.",
+    colorNames: {
+      paper: "Fundo",
+      ink: "Texto",
+      muted: "Texto secundário",
+      rule: "Divisórias",
+      soft: "Destaque suave",
+    },
+    displayLabel: "Títulos",
+    bodyLabel: "Texto corrido",
+    labelLabel: "RÓTULO",
     foundations: "Fundamentos",
     type: "Tipografia",
     colors: "Cores",
@@ -395,7 +404,7 @@ const pt = {
     principlesList: [
       "A tipografia cria a hierarquia.",
       "O espaço organiza a narrativa.",
-      "O azul orienta a ação.",
+      "A cor de destaque orienta as ações.",
       "Cada tela apresenta uma ideia.",
     ],
   },
@@ -405,19 +414,19 @@ const en = {
   settings: {
     title: "Settings",
     presentation: "Presentation",
-    description: "Tailor the presentation to each conversation.",
+    description: "Choose the language and accent color.",
     language: "Language",
     color: "Accent color",
-    colorHelp: "Choose the company’s color or paste its hex code.",
+    colorHelp: "Choose a color or paste its hex code.",
     picker: "Choose accent color",
     hex: "Hex code",
-    invalid: "Use six characters from 0–9 or A–F, such as #193CF5.",
+    invalid: "Use a six-character hex code, such as #193CF5.",
     presets: "Suggested colors",
     defaultColor: "Default blue",
     preview: "Preview",
-    previewText: "Your journey.",
-    previewAccent: "Your identity.",
-    saved: "Your preferences are saved in this browser.",
+    previewText: "A presentation.",
+    previewAccent: "With your color.",
+    saved: "Language and color are saved automatically in this browser.",
     reset: "Restore default blue",
     done: "Done",
   },
@@ -445,12 +454,12 @@ const en = {
   slideNames: [
     "Opening",
     "About me",
-    "University",
+    "Education",
     "ACCT Global",
-    "Next chapter",
+    "From ACCT to AB InBev",
     "AB InBev",
-    "Project 01",
-    "Project 02",
+    "Zé Delivery",
+    "TaDa Delivery",
     "Personal projects",
     "Closing",
   ],
@@ -458,8 +467,7 @@ const en = {
     { number: "01", title: "About me", target: "sobre" },
     {
       number: "02",
-      title: "How it all started",
-      subtitle: "University",
+      title: "Education",
       target: "faculdade",
     },
     { number: "03", title: "ACCT Global", target: "primeiro-emprego" },
@@ -470,7 +478,7 @@ const en = {
     first: "About me.",
     second: "My",
     accent: "work.",
-    subtitle: "People, technology and data.",
+    subtitle: "My experience in software and the projects I’ve worked on.",
   },
   about: {
     title: "Me, beyond",
@@ -485,7 +493,7 @@ const en = {
       ],
       [
         "HOBBIES",
-        "Online games, although I play less often now because of my routine; cooking, strength training and traveling.",
+        "I enjoy online games, cooking, strength training and traveling. These days, I play less often because of my routine.",
       ],
     ],
   },
@@ -493,20 +501,20 @@ const en = {
     title: "My",
     accent: "education.",
     intro:
-      "Systems Analysis and Development · Faculdade de Tecnologia do Estado de São Paulo (FATEC)",
+      "Systems Analysis and Development · FATEC",
     period: "January 2019 — December 2021",
     steps: [
       [
         "Choosing the degree",
-        "I always enjoyed maths and science and considered studying engineering. My early contact with technology through games led me to pursue a career in IT.",
+        "I always enjoyed maths and science and considered studying engineering. My contact with technology through games led me to choose IT.",
       ],
       [
-        "During university",
-        "I started my internship in August 2020, and the experience reinforced my desire to keep growing as a software developer.",
+        "First internship",
+        "I started my internship in August 2020, while still studying. The experience reinforced my desire to grow as a developer.",
       ],
       [
         "From logarithms to algorithms",
-        "In my first semester, I confused algorithms with logarithms. At first, I understood almost nothing; over time, I fell in love with programming logic.",
+        "In my first semester, I confused algorithms with logarithms and struggled in the first classes. Once programming logic began to make sense, I started to enjoy the field.",
       ],
     ],
   },
@@ -522,11 +530,11 @@ const en = {
     rows: [
       [
         "The context",
-        "At ACCT Global, I worked on e-commerce projects for brands across different sectors, contributing to concurrent workstreams alongside Product, QA and Design.",
+        "I worked on e-commerce projects for brands across different sectors, contributing to concurrent workstreams in collaboration with Product, QA and Design.",
       ],
       [
         "My role",
-        "Feature architecture, frontend development, A/B tests, deployments and mentoring.",
+        "I contributed to feature architecture, frontend development, A/B tests, deployments and mentoring.",
       ],
       [
         "Achievements",
@@ -547,16 +555,16 @@ const en = {
     accent: "changed companies.",
     rows: [
       [
-        "What I take with me",
-        "Looking beyond the board and focusing on the end user: how can we use a feature’s delivery window to achieve its best possible outcome?",
+        "Focus on the user",
+        "I learned to look beyond board tasks and consider what each feature delivers for the end user.",
       ],
       [
         "Why move on",
-        "I wanted to understand the impact of my code on the product. That was difficult when I moved to a different client every three months.",
+        "I wanted to follow the impact of my work on the product. Moving between clients in roughly three-month cycles made that difficult.",
       ],
       [
-        "The next step",
-        "Join a product company where I could follow the data and outcomes generated by my code and knowledge.",
+        "What I was looking for",
+        "I was looking for a product company where I could follow data, results and the impact of my work over time.",
       ],
     ],
     destination: "NEXT COMPANY",
@@ -568,10 +576,10 @@ const en = {
     intro: "AB InBev",
     role: "Software Engineer · Since May 2022",
     summary:
-      "I design and evolve B2C e-commerce products, connecting architecture, product and experience across web, mobile and backend applications.",
+      "I develop B2C e-commerce products across web, mobile and backend applications, with a focus on architecture and user experience.",
     projects: [
       ["Zé Delivery", "About 1 year and 8 months on the project."],
-      ["TaDa Delivery", "I joined the project in early 2024."],
+      ["TaDa Delivery", "On the project since January 2024."],
     ],
     action: "Explore the project",
   },
@@ -580,22 +588,22 @@ const en = {
       title: "Zé",
       accent: "Delivery.",
       description:
-        "AB InBev’s main DTC product in Brazil: it delivers cold beverages in under 30 minutes and serves more than 9 million consumers per year.",
+        "AB InBev’s beverage delivery product in Brazil, with platforms for consumers and points of sale.",
       period: "",
       stages: [
         [
           "Seller · Point-of-sale management",
-          "I worked on the team responsible for the point-of-sale management platform, building inventory and online payment features.",
+          "I developed inventory and online payment features for the point-of-sale management platform.",
           "Start · 05/22",
         ],
         [
           "Consumer · Sampling",
-          "Seller’s pace and B2B context were not a good fit for what I was looking for, so I moved to Consumer to deliver Sampling. The project lasted almost eight months and allowed consumers to try beverages for R$0.01.",
+          "I moved to Consumer to develop Sampling, which let consumers try beverages for R$0.01. I worked on the project for almost eight months.",
           "Start · 01/23",
         ],
         [
           "Seller · Scheduled delivery",
-          "In a shorter project lasting around six months, I developed and supported the Product team in delivering Seller’s scheduled-delivery experience.",
+          "I returned to Seller to build scheduled delivery in partnership with Product, on a project lasting three months.",
           "Start · 09/23",
         ],
       ],
@@ -609,9 +617,9 @@ const en = {
       ],
       achievement: "≈ 4 million fewer requests per week",
       evidence:
-        "We reviewed the React Query queries and configured cache keys and staleTime to reuse responses without making unnecessary new calls. Comparing weeks with equivalent session volumes, the tests showed nearly 4 million fewer backend requests.",
+        "We adjusted cache keys and staleTime in React Query to reuse responses. Tests comparing weeks with equivalent session volumes showed nearly 4 million fewer backend requests.",
       article: {
-        label: "Read the article on Medium",
+        label: "How we reduced requests with React Query",
         url: "https://medium.com/@renanguerraa_/como-utilizamos-do-cache-a-ponto-de-diminuir-as-requests-em-4-milh%C3%B5es-no-seu-z%C3%A9-ae77450fbd33",
       },
     },
@@ -619,17 +627,17 @@ const en = {
       title: "TaDa",
       accent: "Delivery.",
       description:
-        "AB InBev’s first global DTC platform: it delivers beverages in up to 30 minutes and reached more than 1 million consumers across 11 countries.",
+        "AB InBev’s global platform for consumers to buy beverages and have them delivered.",
       period: "",
       stages: [
         [
           "Consumer · Checkout",
-          "I joined the project and stayed for almost two and a half years. I began by learning the new working framework and BFF architecture, developed a deeper understanding of the technical debt in a new product, and went on to lead the team technically. Key highlights included improving observability and consistently supporting the Product team with business data.",
+          "I spent almost two and a half years in Checkout, progressing from learning the framework and BFF architecture to providing technical leadership for the team. I improved observability and supported Product with business data.",
           "Start · 01/2024",
         ],
         [
           "Consumer · Omnichannel",
-          "I joined the team to apply the engineering standards introduced in Checkout, while supporting the architecture and technical leadership of other features. I structured and shared practices for using AI in development, such as Cursor Rules, helping the team create more precise context, reduce token usage, and better direct each task. Improving the team’s observability remained one of the main highlights.",
+          "I began applying Checkout’s engineering standards in Omnichannel, supporting architecture, technical leadership and observability. I also structured and shared AI practices, such as Cursor Rules, to provide precise context, reduce token usage and better direct tasks.",
           "Start · 03/2026",
         ],
       ],
@@ -640,9 +648,9 @@ const en = {
         "GraphQL",
         "Jest",
       ],
-      achievement: "From around 4% to 0.3% of orders with errors",
+      achievement: "Orders with errors: from ≈ 4% to 0.3%",
       evidence:
-        "As AI adoption evolved within the project, we built an MCP that integrated tools such as New Relic, Amplitude, and Jira. Cross-referencing this data helped us trace technical debt in data collection and engineering, reducing the rate of orders with errors from approximately 4% to 0.3%.",
+        "I helped build an MCP that integrated New Relic, Amplitude and Jira. With AI support, we cross-referenced data to trace technical debt in data collection and engineering. This work contributed to reducing the rate of orders with errors from approximately 4% to 0.3%.",
     },
   ],
   labels: {
@@ -664,30 +672,30 @@ const en = {
       slides: [
         {
           title: "Find nearby matches",
-          description: "The phone obtains the user’s location and sends latitude and longitude to the API. In PostgreSQL, PostGIS uses a geographic index to find matches within a default 15 km radius. The database calculates the distance, sorts results from nearest to farthest, and applies pagination. The response includes the distance in kilometers and whether the user has already joined each match.",
+          description: "The app sends the user’s latitude and longitude to the API. In PostgreSQL, PostGIS uses a geographic index to find matches within a default 15 km radius. Results are paginated and sorted from nearest to farthest, with the distance in kilometers and an indication of whether the user has joined.",
         },
         {
           title: "Create a match",
-          description: "Users choose the sport, date, details, and match location on the map. The selected address generates latitude and longitude, allowing the new match to appear correctly in the proximity-based discovery flow.",
+          description: "When creating a match, users set the sport, date and details, then choose a location on the map. The address generates latitude and longitude coordinates used to find nearby matches.",
         },
         {
           title: "My Account",
-          description: "In My Account, users can track key indicators such as total games, matches created, participation rate, and most-played sports, providing a quick view of their activity across the platform.",
+          description: "My Account brings together total games, matches created, participation rate and most-played sports.",
         },
         {
           title: "Personalized notifications",
-          description: "Users can select one or more sports and choose a radius of 5, 10, or 15 km. When preferences are saved, the app records the location used for discovery and enables the device to receive alerts about matching new games within the selected area. These preferences can be changed later in profile settings.",
+          description: "Users choose sports and a radius of 5, 10 or 15 km. The app saves the location and enables the device to receive alerts about matching new games in the area. Preferences can be changed in profile settings.",
         },
         {
           title: "Match chat",
-          description: "Each match has an exclusive chat where participants can coordinate game details. The conversation keeps a message history and provides safety tools for blocking players or reporting inappropriate content.",
+          description: "Each match’s chat lets participants coordinate details and view the message history. Participants can also block players and report inappropriate content.",
         },
       ],
     },
     sectionLabel: "HOW THE APP WORKS",
     heading: "We turn the desire to play into real matches",
     description:
-      "Convoca is an app for creating and finding nearby sports matches, inviting people, and confirming attendance.",
+      "With Convoca, you can find nearby matches, create games, invite people and confirm attendance.",
     stackLabel: "STACK",
     stack: [
       ["Mobile and web frontend", "React Native and React.js"],
@@ -701,52 +709,52 @@ const en = {
       ["Institutional website", "Firebase"],
     ],
     aiJourney: {
-      label: "AI FROM MOMENT ZERO",
+      label: "AI FROM DAY ONE",
       heading: "From the first idea to launch",
-      intro: "AI supported the entire process: turning the idea into a product, preserving context between stages, and accelerating decisions beyond the code itself.",
+      intro: "I used AI for prototyping, documentation, development and launch preparation.",
       steps: [
         {
           tool: "Miro AI",
-          title: "Idea and initial prototype",
-          description: "I started with Miro AI to turn the initial idea into flows and a first visual prototype.",
+          title: "Flows and prototype",
+          description: "I used Miro AI to turn the idea into flows and a first visual prototype.",
         },
         {
           tool: "Codex",
-          title: "Structure and context",
-          description: "With the screens outlined, I planned the data structure and generated documentation files to give AI context about the product, screens, and APIs.",
+          title: "Data and context",
+          description: "With Codex, I planned the data structure and documented the product, screens and APIs to guide the next stages.",
         },
         {
           tool: "Product Design skill",
-          title: "Final design and rules",
-          description: "I used the Product Design skill to evolve the prototype, finalize the screens, and consolidate the rules and documentation for each feature.",
+          title: "Screens and rules",
+          description: "I refined the screens with the Product Design skill and consolidated the rules and documentation for each feature.",
         },
         {
           tool: "AI-guided development",
-          title: "Turning the product into code",
-          description: "With the product and its context documented, I began developing the app and APIs through a fully AI-guided workflow.",
+          title: "App and APIs",
+          description: "I developed the app and APIs through an AI-guided workflow, using the context documented in the previous stages.",
         },
         {
           tool: "Product and operations",
-          title: "Beyond development",
-          description: "After building the app, I used AI to understand hosting, trademark registration with INPI, and the app-store launch process.",
+          title: "Launch preparation",
+          description: "I used AI to understand hosting, trademark registration with INPI and publishing to app stores.",
         },
       ],
     },
     aiLearnings: {
-      label: "KEY AI LEARNINGS",
+      label: "KEY LESSONS ABOUT AI",
       heading: "More context. Tokens aren't cheap.",
       items: [
         {
           title: "Context reduces cost and improves accuracy",
-          description: "Well-defined documentation and rules prevent repeated explanations, preserve the context window, and help AI make decisions that are better aligned with the project.",
+          description: "Clear documentation and rules reduce repeated explanations and help AI make decisions aligned with the project.",
         },
         {
           title: "Autonomy needs clear criteria",
-          description: "The final outcome is not the only measure of quality. AI also needs to follow the right process: first we validate that the solution meets the objective, then we run tests and QA checks, avoiding premature automation and unnecessary token usage.",
+          description: "Autonomy starts with a clear goal and acceptance criteria. Validating the solution’s direction before automating tests and QA helps avoid rework and unnecessary token usage.",
         },
         {
           title: "Recurring knowledge should live in the project",
-          description: "Frequent commands and operational information should be recorded in package.json scripts or documentation. This allows AI to focus on the problem instead of rediscovering how to start the project, run tests, or inspect the environment.",
+          description: "Record recurring commands and information in package.json scripts or documentation. This lets AI focus on the problem without rediscovering how to start the project, run tests or inspect the environment.",
         },
       ],
     },
@@ -759,10 +767,20 @@ const en = {
     action: "Home",
   },
   ds: {
-    title: "One language.",
-    accent: "Many stories.",
+    title: "The visual foundation",
+    accent: "of this presentation.",
     intro:
-      "The presentation’s visual foundation: editorial, clear and intentional.",
+      "Tokens, typography and components used in this presentation.",
+    colorNames: {
+      paper: "Paper",
+      ink: "Ink",
+      muted: "Muted",
+      rule: "Rule",
+      soft: "Soft",
+    },
+    displayLabel: "Display",
+    bodyLabel: "Body",
+    labelLabel: "LABEL",
     foundations: "Foundations",
     type: "Typography",
     colors: "Colors",
@@ -780,7 +798,7 @@ const en = {
     principlesList: [
       "Typography creates hierarchy.",
       "Space organizes the narrative.",
-      "Blue guides the action.",
+      "The accent color guides actions.",
       "Each screen presents one idea.",
     ],
   },

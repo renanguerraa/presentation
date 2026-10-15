@@ -11,7 +11,7 @@ Fonte: `Resume - Renan Galan Guerra - Senior Software Engineer.pdf`, fornecido p
 - Zé Delivery: aproximadamente 1 ano e 8 meses, correção de débito técnico de cache e redução de cerca de 4 milhões de requisições por semana.
 - O artigo de Renan no Medium detalha que a redução veio da revisão das queries em React Query, com configuração das chaves e de `staleTime`; os testes compararam semanas com volume de sessões equivalente e totalizaram quase 4 milhões de requisições a menos ao backend.
 - Zé Delivery: os momentos começaram em maio de 2022 (Seller), janeiro de 2023 (Consumer · Sampling) e setembro de 2023 (Seller · Entrega agendada), conforme informado pelo usuário.
-- TaDa Delivery: Checkout começou em janeiro de 2024 e Omnichannel em março de 2026, conforme informado pelo usuário. Conquistas específicas permanecem pendentes.
+- TaDa Delivery: Checkout começou em janeiro de 2024 e Omnichannel em março de 2026, conforme informado pelo usuário. A contribuição via MCP e a redução de pedidos com erro foram fornecidas posteriormente e estão registradas abaixo.
 - TaDa Delivery: início no começo de 2024, conforme informado pelo usuário.
 - Dados públicos usados nas descrições: o [Relatório Anual 2024 da AB InBev](https://db.srnav.com/storage/v1/object/public/document-pdfs/05f42eb7-e16f-4824-adec-f4d9ca16443f.pdf) informa que o Zé Delivery atende mais de 9 milhões de consumidores por ano e que o TaDa Delivery alcançou mais de 1 milhão de consumidores em 11 países. A [página institucional da AB InBev sobre o TaDa](https://www.ab-inbev.com/news-media/news-stories/tada-delivery-the-magic-behind-ab-inbevs-first-global-direct-to-consumer-platform/) descreve a proposta de entrega em até 30 minutos.
 - As tecnologias nos dois projetos estão identificadas como stack da AB InBev: o CV não discrimina a stack de cada projeto.
@@ -30,23 +30,23 @@ Fonte: `Resume - Renan Galan Guerra - Senior Software Engineer.pdf`, fornecido p
 - Principais aprendizados de IA na Convoca: contexto reduz custo e aumenta precisão; autonomia precisa de critérios e validação antes de testes e QA; e conhecimentos recorrentes devem viver no projeto por meio de scripts do `package.json` ou documentação.
 - As cinco capturas da App Store fornecidas pelo usuário foram copiadas para `public/brands/convoca-ios-01.png` até `convoca-ios-05.png` e aparecem em um carrossel abaixo da marca.
 
-- Motivo da saída da ACCT e expectativas ao entrar na AB InBev.
+- O motivo da saída da ACCT e as expectativas ao entrar na AB InBev foram fornecidos posteriormente e estão registrados abaixo.
 - Marcos adicionais da trajetória e responsabilidades por projeto.
-- Confirmar a qual projeto pertencem as métricas de falhas em pedidos e alcance internacional; detalhar a contribuição e o período de medição.
-- Confirmar a stack específica de cada projeto e acrescentar resultados que não constam no CV.
+- A contribuição na redução aproximada de 4% para 0,3% de pedidos com erro foi confirmada no TaDa; o período de medição permanece sem detalhamento. Métricas de alcance público não são apresentadas como resultado individual.
+- As stacks específicas de Zé Delivery e TaDa Delivery foram definidas pelo usuário em AGENTS.md. Resultados adicionais que não constam no CV foram registrados nas informações fornecidas abaixo.
 - A promoção a Júnior na ACCT Global aparece como fev./Feb. 2021, conforme informado pelo usuário. A promoção a Pleno na AB InBev aparece como mai./May 2023, inferida a partir do início em maio de 2022; confirmar o mês exato antes da versão final.
 
 ## Informações pessoais fornecidas pelo usuário
 
 - Software Engineer com 6 anos de experiência, principalmente em projetos B2C.
 - Nascimento em 07/07/2001; a idade é calculada no frontend.
-- Viveu em Atibaia, São Paulo, até se mudar para Campinas no início de 2026.
+- Viveu em Atibaia, São Paulo, até se mudar para Campinas no início de 2025, conforme confirmação do usuário em 15/10/2026.
 - Hobbies: jogos online, cozinhar, musculação e viagens. Atualmente joga com menos frequência por causa da rotina adulta.
 - Escolheu a área de TI após considerar uma graduação em engenharia; o interesse por exatas e o contato precoce com tecnologia por meio dos jogos influenciaram a decisão.
 - Começou a estagiar em agosto de 2020 durante a graduação, experiência que reforçou sua vontade de crescer na área de desenvolvimento.
 - No primeiro semestre, confundiu Algoritmos com logaritmos e teve dificuldade nas primeiras aulas de laboratório; ao compreender lógica de programação, passou a gostar da área.
 - Ao sair da ACCT Global, buscava pensar além do board e acompanhar o impacto do próprio código no usuário final; a troca de clientes aproximadamente a cada três meses dificultava esse acompanhamento. O próximo passo desejado era uma empresa de produto orientada por dados e resultados.
-- Na AB InBev, começou em Seller na plataforma de gestão do ponto de venda, atuando em estoque e pagamento online. Depois foi para Consumer entregar o Sampling durante quase oito meses, permitindo experimentar bebidas por R$ 0,01. Em seguida voltou para Seller em um projeto de cerca de seis meses para desenvolver e apoiar Produto na experiência de entrega agendada.
+- Na AB InBev, começou em Seller na plataforma de gestão do ponto de venda, atuando em estoque e pagamento online. Depois foi para Consumer entregar o Sampling durante quase oito meses, permitindo experimentar bebidas por R$ 0,01. Em seguida voltou para Seller em um projeto de três meses para desenvolver e apoiar Produto na experiência de entrega agendada, conforme correção do usuário em 15/10/2026.
 - No TaDa Delivery, permaneceu quase dois anos e meio no time Consumer Checkout, evoluindo do entendimento do framework e da arquitetura BFF para a liderança técnica, com destaque para observabilidade e apoio constante ao time de Produto com dados de negócio. Depois passou ao time Consumer Omnichannel para aplicar os padrões de engenharia do Checkout, apoiar arquitetura, liderança técnica e observabilidade, e estruturar e compartilhar com o time práticas de IA, como Cursor Rules, baseadas em contextos mais precisos, com economia de tokens e melhor direcionamento das tarefas.
 - No TaDa Delivery, participou da criação de um MCP que integrava New Relic, Amplitude e Jira. A análise apoiada por IA rastreou débitos técnicos na captura de dados e na engenharia, contribuindo para reduzir a taxa de pedidos com erro de aproximadamente 4% para 0,3%.
 

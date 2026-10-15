@@ -39,7 +39,7 @@ export function ChapterIndex({ t, current = 0, go, compact = false }) {
         <span className="chapter-copy"><span className="eyebrow">{t.chapter}</span><span className="chapter-title">{chapter.title}</span>{chapter.subtitle && <span className="chapter-subtitle">{chapter.subtitle}</span>}</span>
         <MinusIcon className="chapter-dash" size={28} weight="light" aria-hidden="true" />
       </button>
-      {i === 3 && <div className="project-subnav">{[1, 2].map(n => <button key={n} onClick={() => go(`projeto-0${n}`)}><span>{t.labels.project} 0{n}</span><MinusIcon size={22} weight="light" aria-hidden="true" /></button>)}</div>}
+      {i === 3 && <div className="project-subnav">{t.current.projects.map(([title], index) => <button key={title} onClick={() => go(`projeto-0${index + 1}`)}><span>{title}</span><MinusIcon size={22} weight="light" aria-hidden="true" /></button>)}</div>}
     </div>)}
   </nav>;
 }

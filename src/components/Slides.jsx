@@ -24,7 +24,7 @@ export function About({ t }) {
 
 export function College({ t }) {
   const d = t.college;
-  return <div className="editorial-grid"><section><Eyebrow>02 / {t.nav[1].subtitle}</Eyebrow><DisplayTitle title={d.title} accent={d.accent} id="slide-title" /><p className="person-name">{d.intro}</p><p className="muted">{d.period}</p></section><DetailRows rows={d.steps} numbered /></div>;
+  return <div className="editorial-grid"><section><Eyebrow>02 / {t.nav[1].title}</Eyebrow><DisplayTitle title={d.title} accent={d.accent} id="slide-title" /><p className="person-name">{d.intro}</p><p className="muted">{d.period}</p></section><DetailRows rows={d.steps} numbered /></div>;
 }
 
 export function FirstJob({ t }) {

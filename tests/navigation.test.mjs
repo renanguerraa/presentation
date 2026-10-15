@@ -54,7 +54,8 @@ test('next and previous cannot leave the deck and traverse every slide', () => {
 });
 function shape(value) {
   if(Array.isArray(value)) return value.map(shape);
-  if(value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)]));
+  // Project-wide periods are intentionally hidden; dates belong to each moment.
+  if(value && typeof value === 'object') return Object.fromEntries(Object.entries(value).filter(([key,entry])=>key !== 'period' || entry !== '').map(([k,v])=>[k,shape(v)]));
   assert.equal(typeof value,'string'); assert.ok(value.trim()); return typeof value;
 }
 test('personal projects form a fifth chapter before closing in both languages', () => {
@@ -73,7 +74,7 @@ test('both languages have complete matching content and exactly two AB InBev pro
     assert.equal(locale.current.projects.length,2);
     assert.equal(locale.slideNames.length,slideOrder.length);
     locale.nav.forEach(item=>assert.ok(slideOrder.includes(item.target)));
-    locale.projects.forEach(project=>{assert.equal(project.stages.length,3); assert.ok(project.technologies.length); assert.ok(project.achievement);});
+    locale.projects.forEach((project,index)=>{assert.equal(project.stages.length,index === 0 ? 3 : 2); assert.ok(project.technologies.length); assert.ok(project.achievement);});
   }
   assert.equal(slideChapters.length,slideOrder.length);
   assert.equal(new Set(slideOrder).size,slideOrder.length);

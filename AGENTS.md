@@ -12,6 +12,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Usar Renan Galan Guerra como nome completo na apresentação e nos metadados.
 - Preferir títulos diretos e específicos de cada etapa; evitar clichês sobre trajetória, ciclos e construção. O botão de retorno no encerramento usa “Início” / “Home”.
+- A revisão editorial de 15/10/2026 foi aprovada em PT/EN, com duas exceções: preservar todo o encerramento atual (“O próximo capítulo está em construção.” e sua tradução) e o título da apresentação da Convoca (“Transformamos vontade de jogar em partidas reais” / “We turn the desire to play into real matches”). Essas escolhas prevalecem sobre a preferência geral por títulos diretos.
 - O acesso ao Design System fica dentro do modal de configurações; não exibir o atalho no rodapé nem no índice de capítulos.
 - Não exibir a dica de navegação por setas no rodapé. A seção Sobre mim usa o título “Eu, além do código.”, com tradução em inglês.
 - O usuário escolheu a primeira direção do Product Design. Fonte visual: `docs/design-reference.png`.
@@ -47,7 +48,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - A etapa da AB InBev exibe os logos de Zé Delivery e TaDa Delivery ao lado dos nomes dos projetos. O logo do TaDa é armazenado localmente a partir do arquivo oficial para evitar quebra por dependência externa.
 - No resumo da AB InBev, “Zé Delivery” permanece em uma única linha e exibe “Cerca de 1 ano e 8 meses de atuação”.
 - No slide detalhado do Zé Delivery, “Zé Delivery.” permanece em uma única linha e o período “Cerca de 1 ano e 8 meses” não é exibido.
-- Os três momentos do slide detalhado do Zé Delivery são: chegada em Seller com estoque e pagamento online; mudança para Consumer para entregar o Sampling durante quase oito meses; e retorno a Seller para a entrega agendada em um projeto de cerca de seis meses.
+- Os três momentos do slide detalhado do Zé Delivery são: chegada em Seller com estoque e pagamento online; mudança para Consumer para entregar o Sampling durante quase oito meses; e retorno a Seller para a entrega agendada em um projeto de três meses, conforme correção do usuário.
 - Os títulos desses momentos seguem o padrão direto “área · iniciativa”: “Seller · Gestão do ponto de venda”, “Consumer · Sampling” e “Seller · Entrega agendada”.
 - Exibir o início de cada momento do Zé Delivery: 05/22 em Seller, 01/23 em Consumer · Sampling e 09/23 em Seller · Entrega agendada.
 - No slide do TaDa, “TaDa Delivery.” fica em uma única linha. Os momentos são “Consumer · Checkout”, cobrindo quase dois anos e meio até a liderança técnica e evolução da observabilidade, e “Consumer · Omnichannel”, com aplicação dos padrões do Checkout, apoio à arquitetura, liderança técnica e observabilidade.
@@ -59,7 +60,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Nos slides detalhados de Zé Delivery e TaDa Delivery, usar apenas “Stack” como título. No Zé, não exibir NestJS; no TaDa, não exibir React.js nem React Native.
 - A conquista do Zé Delivery explicita “≈ 4 milhões de requests a menos por semana”, explica o uso de chaves de cache e `staleTime` no React Query e oferece um link para o artigo de Renan no Medium.
 - No mobile, reduzir um pouco a fonte de “Zé Delivery” e “TaDa Delivery” no slide 06, mantendo os nomes em uma linha.
-- A seção Sobre mim apresenta Renan como Software Engineer com 6 anos de experiência, principalmente em projetos B2C; menciona a mudança de Atibaia para Campinas no início de 2026 e os hobbies jogos online, cozinhar, musculação e viagens.
+- A seção Sobre mim apresenta Renan como Software Engineer com 6 anos de experiência, principalmente em projetos B2C; menciona a mudança de Atibaia para Campinas no início de 2025, confirmada pelo usuário, e os hobbies jogos online, cozinhar, musculação e viagens.
 - Exibir a idade ao lado do nome na seção Sobre mim, calculada no frontend a partir da data de nascimento 07/07/2001.
 - Na faculdade, Renan conta que sempre gostou de exatas, considerou seguir engenharia e escolheu TI após o contato precoce com tecnologia por meio dos jogos.
 - Durante a graduação, Renan começou a estagiar em agosto de 2020, o que reforçou sua vontade de crescer na área de desenvolvimento.
