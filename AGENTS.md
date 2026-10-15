@@ -27,9 +27,12 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - No carrossel da Convoca, a foto 04 exibe ao lado a explicação de “Notificações personalizadas”, cobrindo seleção de esportes, raios de 5, 10 ou 15 km, localização, avisos de novas partidas compatíveis e edição das preferências no perfil.
 - No carrossel da Convoca, a foto 05 exibe ao lado a explicação de “Chat da partida”, cobrindo combinação de detalhes, histórico de mensagens, bloqueio de jogadores e denúncia de conteúdo inadequado.
 - Abaixo da apresentação da Convoca, exibir a seção “IA desde o momento zero” como uma jornada em cinco etapas: protótipo inicial com Miro AI; estrutura de dados e documentação de contexto com Codex; telas e regras finais com uma skill de Product Design; desenvolvimento do app e APIs guiado por IA; e apoio em hospedagem, registro no INPI e lançamento nas lojas.
+- Depois da jornada, exibir “Principais aprendizados sobre IA” em três pontos: “Contexto reduz custo e aumenta precisão”, “Autonomia precisa de critérios” e “Conhecimento recorrente deve viver no projeto”.
+- O título dessa seção usa um tom leve: “Mais contexto. Tokens não são baratos.” / “More context. Tokens aren't cheap.”
 - Nas explicações ao lado das capturas da Convoca, exibir diretamente o título e o texto, sem o rótulo “Feature em destaque”.
 - A logo da Convoca usa uma sombra curta e discreta.
 - Abaixo do título e da logo da Convoca, exibir em carrossel automático as cinco capturas da App Store armazenadas localmente como `convoca-ios-01.png` a `convoca-ios-05.png`, com setas e respeito a movimento reduzido.
+- O carrossel de projetos da ACCT usa transição suave de 800ms entre marcas e respeita movimento reduzido.
 - As capturas do carrossel da Convoca usam raio de 22px; em tela cheia, usam um raio maior de 40px.
 - Ao clicar em uma captura do carrossel da Convoca, abrir a imagem em um modal de tela cheia com overlay escuro, fechamento e navegação entre as imagens.
 - Não inventar dados da carreira. Preencher somente informações fornecidas pelo usuário; usar colchetes enquanto pendentes.
@@ -47,13 +50,15 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Os três momentos do slide detalhado do Zé Delivery são: chegada em Seller com estoque e pagamento online; mudança para Consumer para entregar o Sampling durante quase oito meses; e retorno a Seller para a entrega agendada em um projeto de cerca de seis meses.
 - Os títulos desses momentos seguem o padrão direto “área · iniciativa”: “Seller · Gestão do ponto de venda”, “Consumer · Sampling” e “Seller · Entrega agendada”.
 - Exibir o início de cada momento do Zé Delivery: 05/22 em Seller, 01/23 em Consumer · Sampling e 09/23 em Seller · Entrega agendada.
-- No slide do TaDa, “TaDa Delivery.” fica em uma única linha. Os momentos são “Consumer · Checkout”, cobrindo quase dois anos até a liderança técnica e evolução da observabilidade, e “Consumer · Omnichannel”, com aplicação dos padrões do Checkout, apoio à arquitetura, liderança técnica e observabilidade.
+- No slide do TaDa, “TaDa Delivery.” fica em uma única linha. Os momentos são “Consumer · Checkout”, cobrindo quase dois anos e meio até a liderança técnica e evolução da observabilidade, e “Consumer · Omnichannel”, com aplicação dos padrões do Checkout, apoio à arquitetura, liderança técnica e observabilidade.
 - Exibir o início de cada momento do TaDa Delivery: 01/2024 em Consumer · Checkout e 03/2026 em Consumer · Omnichannel.
 - No slide detalhado do TaDa Delivery, não exibir um período geral; manter as datas apenas nos momentos de Checkout e Omnichannel.
 - No momento Consumer · Checkout do TaDa, destacar a evolução da observabilidade e o apoio constante ao time de Produto com dados de negócio.
 - No momento Consumer · Omnichannel do TaDa, destacar que Renan estruturou e compartilhou com o time práticas de IA para o desenvolvimento, usando Cursor Rules como exemplo de contexto preciso para economizar tokens e direcionar melhor as tarefas.
 - A conquista em destaque do TaDa apresenta o MCP com IA que integrava New Relic, Amplitude e Jira para cruzar dados, rastrear débitos técnicos e reduzir a taxa de pedidos com erro de aproximadamente 4% para 0,3%.
 - Nos slides detalhados de Zé Delivery e TaDa Delivery, usar apenas “Stack” como título. No Zé, não exibir NestJS; no TaDa, não exibir React.js nem React Native.
+- A conquista do Zé Delivery explicita “≈ 4 milhões de requests a menos por semana”, explica o uso de chaves de cache e `staleTime` no React Query e oferece um link para o artigo de Renan no Medium.
+- No mobile, reduzir um pouco a fonte de “Zé Delivery” e “TaDa Delivery” no slide 06, mantendo os nomes em uma linha.
 - A seção Sobre mim apresenta Renan como Software Engineer com 6 anos de experiência, principalmente em projetos B2C; menciona a mudança de Atibaia para Campinas no início de 2026 e os hobbies jogos online, cozinhar, musculação e viagens.
 - Exibir a idade ao lado do nome na seção Sobre mim, calculada no frontend a partir da data de nascimento 07/07/2001.
 - Na faculdade, Renan conta que sempre gostou de exatas, considerou seguir engenharia e escolheu TI após o contato precoce com tecnologia por meio dos jogos.
@@ -65,3 +70,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Na navegação horizontal de capítulos, alinhar verticalmente o número e o texto de cada item.
 - O currículo fornecido em 14/09/2026 foi incorporado parcialmente em PT/EN. Consultar `docs/content-sources.md` para dados confirmados e lacunas; não inferir motivos de saída, promoções, datas exatas ou atribuições de métricas por projeto.
 - Configurações no cabeçalho reúnem idioma e cor de destaque. O azul #193CF5 é o padrão; a cor pode ser personalizada para cada empresa e deve persistir localmente. Atualizar os tokens derivados, preservando o fundo marfim e a tipografia.
+- A aba do navegador usa um favicon com “RG.” em Bodoni Moda, azul cobalto e marfim.

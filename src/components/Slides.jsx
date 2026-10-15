@@ -43,7 +43,7 @@ export function CurrentCompany({ t, go }) {
     'https://cdn.worldvectorlogo.com/logos/ze-delivery-logo.svg',
     `${import.meta.env.BASE_URL}brands/tada-delivery.png`,
   ];
-  return <div className="editorial-grid current-company"><section><Eyebrow>04 / {d.current}</Eyebrow><DisplayTitle title={d.title} accent={d.accent} id="slide-title" /><p className="person-name">{d.intro}</p><p className="muted">{d.role}</p><p className="lead company-summary">{d.summary}</p></section><div className="project-choices">{d.projects.map(([title, text], i) => <div key={title} className="project-choice"><Eyebrow>0{i + 1} / AB InBev</Eyebrow><div className="project-choice-heading"><img className="project-choice-logo" src={logos[i]} alt="" aria-hidden="true" /><span className="project-choice-title">{title}</span></div>{text && <span className="muted">{text}</span>}</div>)}</div></div>;
+  return <div className="editorial-grid current-company"><section><Eyebrow>04 / {d.current}</Eyebrow><DisplayTitle title={d.title} accent={d.accent} id="slide-title" /><p className="person-name">{d.intro}</p><p className="muted">{d.role}</p><p className="lead company-summary">{d.summary}</p></section><div className="project-choices">{d.projects.map(([title, text], i) => <div key={title} className="project-choice"><Eyebrow>0{i + 1} / AB InBev</Eyebrow><div className="project-choice-heading"><img className={`project-choice-logo${i === 1 ? ' is-tada' : ''}`} src={logos[i]} alt="" aria-hidden="true" /><span className="project-choice-title">{title}</span></div>{text && <span className="muted">{text}</span>}</div>)}</div></div>;
 }
 
 export function Project({ t, project, go }) {
@@ -53,7 +53,7 @@ export function Project({ t, project, go }) {
     <DisplayTitle title={d.title} accent={d.accent} id="slide-title" className="case-title" inline />
     <div className="case-description"><p className="lead muted">{d.description}</p>{d.period && <p className="muted period">{d.period}</p>}</div>
     <ol className="trajectory" aria-label={t.labels.evolution}>{d.stages.map(([title, text, date], i) => <li key={title}><div className="trajectory-meta"><span className="trajectory-number">0{i + 1}</span>{date && <span className="trajectory-date">{date}</span>}</div><h2>{title}</h2><p className="muted">{text}</p></li>)}</ol>
-    <div className="case-bottom"><section><Eyebrow>{d.stackLabel}</Eyebrow><Tags items={d.technologies} /></section><section><Eyebrow>{t.labels.achievement}</Eyebrow><h2>{d.achievement}</h2><p className="muted">{d.evidence}</p></section></div>
+    <div className="case-bottom"><section><Eyebrow>{d.stackLabel}</Eyebrow><Tags items={d.technologies} /></section><section><Eyebrow>{t.labels.achievement}</Eyebrow><h2>{d.achievement}</h2><p className="muted">{d.evidence}</p>{d.article && <a className="case-article-link" href={d.article.url} target="_blank" rel="noreferrer"><span>{d.article.label}</span><ArrowUpRightIcon size={17} aria-hidden="true" /></a>}</section></div>
   </div>;
 }
 
@@ -73,6 +73,10 @@ export function PersonalProjects({ t }) {
     <section className="convoca-ai-journey">
       <div className="convoca-ai-heading"><div><Eyebrow>{d.aiJourney.label}</Eyebrow><h2>{d.aiJourney.heading}</h2></div><p className="muted">{d.aiJourney.intro}</p></div>
       <ol>{d.aiJourney.steps.map((step, index) => <li key={step.title}><span className="convoca-ai-number">{String(index + 1).padStart(2, '0')}</span><span className="convoca-ai-tool">{step.tool}</span><h3>{step.title}</h3><p>{step.description}</p></li>)}</ol>
+    </section>
+    <section className="convoca-ai-learnings">
+      <div className="convoca-ai-heading"><div><Eyebrow>{d.aiLearnings.label}</Eyebrow><h2>{d.aiLearnings.heading}</h2></div></div>
+      <ol>{d.aiLearnings.items.map((item, index) => <li key={item.title}><span className="convoca-ai-number">{String(index + 1).padStart(2, '0')}</span><h3>{item.title}</h3><p>{item.description}</p></li>)}</ol>
     </section>
   </div>;
 }

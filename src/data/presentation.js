@@ -224,8 +224,12 @@ const pt = {
         "GraphQL",
         "Jest",
       ],
-      achievement: "≈ 4 milhões a menos por semana",
-      evidence: "Redução de requisições ao backend com a correção do cache.",
+      achievement: "≈ 4 milhões de requests a menos por semana",
+      evidence: "Revisamos as queries do React Query e configuramos as chaves de cache e o staleTime para reaproveitar respostas sem executar novas chamadas desnecessárias. Comparando semanas com volume de sessões equivalente, os testes apontaram uma redução de quase 4 milhões de requisições ao backend.",
+      article: {
+        label: "Ler o artigo no Medium",
+        url: "https://medium.com/@renanguerraa_/como-utilizamos-do-cache-a-ponto-de-diminuir-as-requests-em-4-milh%C3%B5es-no-seu-z%C3%A9-ae77450fbd33",
+      },
     },
     {
       title: "TaDa",
@@ -236,7 +240,7 @@ const pt = {
       stages: [
         [
           "Consumer · Checkout",
-          "Entrei no projeto e permaneci por quase dois anos. Comecei entendendo o novo framework de trabalho e a arquitetura com BFF, evoluí no entendimento do débito técnico de um produto novo e passei a liderar tecnicamente o time. Entre os principais destaques estão a evolução da observabilidade e o apoio constante ao time de Produto com dados de negócio.",
+          "Entrei no projeto e permaneci por quase dois anos e meio. Comecei entendendo o novo framework de trabalho e a arquitetura com BFF, evoluí no entendimento do débito técnico de um produto novo e passei a liderar tecnicamente o time. Entre os principais destaques estão a evolução da observabilidade e o apoio constante ao time de Produto com dados de negócio.",
           "Início · 01/2024",
         ],
         [
@@ -341,6 +345,24 @@ const pt = {
           tool: "Produto e operação",
           title: "Além do desenvolvimento",
           description: "Depois do aplicativo, usei a IA para entender hospedagem, registro da marca no INPI e o processo de lançamento nas lojas.",
+        },
+      ],
+    },
+    aiLearnings: {
+      label: "PRINCIPAIS APRENDIZADOS SOBRE IA",
+      heading: "Mais contexto. Tokens não são baratos.",
+      items: [
+        {
+          title: "Contexto reduz custo e aumenta precisão",
+          description: "Documentos e rules bem definidos evitam explicações repetidas, preservam a janela de contexto e ajudam a IA a tomar decisões mais alinhadas ao projeto.",
+        },
+        {
+          title: "Autonomia precisa de critérios",
+          description: "O resultado final não é a única medida de qualidade. A IA também precisa seguir o processo adequado: primeiro validamos se a solução atende ao objetivo; depois executamos testes e verificações de QA, evitando automações prematuras e consumo desnecessário de tokens.",
+        },
+        {
+          title: "Conhecimento recorrente deve viver no projeto",
+          description: "Comandos frequentes e informações operacionais devem estar registrados em scripts do package.json ou na documentação. Assim, a IA pode se concentrar no problema, em vez de redescobrir como iniciar o projeto, executar testes ou consultar o ambiente.",
         },
       ],
     },
@@ -585,9 +607,13 @@ const en = {
         "GraphQL",
         "Jest",
       ],
-      achievement: "≈ 4 million fewer per week",
+      achievement: "≈ 4 million fewer requests per week",
       evidence:
-        "Fewer backend requests after resolving cache-related technical debt.",
+        "We reviewed the React Query queries and configured cache keys and staleTime to reuse responses without making unnecessary new calls. Comparing weeks with equivalent session volumes, the tests showed nearly 4 million fewer backend requests.",
+      article: {
+        label: "Read the article on Medium",
+        url: "https://medium.com/@renanguerraa_/como-utilizamos-do-cache-a-ponto-de-diminuir-as-requests-em-4-milh%C3%B5es-no-seu-z%C3%A9-ae77450fbd33",
+      },
     },
     {
       title: "TaDa",
@@ -598,7 +624,7 @@ const en = {
       stages: [
         [
           "Consumer · Checkout",
-          "I joined the project and stayed for almost two years. I began by learning the new working framework and BFF architecture, developed a deeper understanding of the technical debt in a new product, and went on to lead the team technically. Key highlights included improving observability and consistently supporting the Product team with business data.",
+          "I joined the project and stayed for almost two and a half years. I began by learning the new working framework and BFF architecture, developed a deeper understanding of the technical debt in a new product, and went on to lead the team technically. Key highlights included improving observability and consistently supporting the Product team with business data.",
           "Start · 01/2024",
         ],
         [
@@ -703,6 +729,24 @@ const en = {
           tool: "Product and operations",
           title: "Beyond development",
           description: "After building the app, I used AI to understand hosting, trademark registration with INPI, and the app-store launch process.",
+        },
+      ],
+    },
+    aiLearnings: {
+      label: "KEY AI LEARNINGS",
+      heading: "More context. Tokens aren't cheap.",
+      items: [
+        {
+          title: "Context reduces cost and improves accuracy",
+          description: "Well-defined documentation and rules prevent repeated explanations, preserve the context window, and help AI make decisions that are better aligned with the project.",
+        },
+        {
+          title: "Autonomy needs clear criteria",
+          description: "The final outcome is not the only measure of quality. AI also needs to follow the right process: first we validate that the solution meets the objective, then we run tests and QA checks, avoiding premature automation and unnecessary token usage.",
+        },
+        {
+          title: "Recurring knowledge should live in the project",
+          description: "Frequent commands and operational information should be recorded in package.json scripts or documentation. This allows AI to focus on the problem instead of rediscovering how to start the project, run tests, or inspect the environment.",
         },
       ],
     },
