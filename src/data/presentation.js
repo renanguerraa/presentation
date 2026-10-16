@@ -163,16 +163,16 @@ const pt = {
     accent: "mudei de empresa.",
     rows: [
       [
-        "Foco no usuário",
-        "Aprendi a olhar além das tarefas do board e a pensar no resultado de cada funcionalidade para o usuário final.",
+        "Foco na entrega",
+        "O trabalho se concentrava na entrega dos projetos, com pouco espaço para avaliar o impacto das funcionalidades na experiência do usuário.",
       ],
       [
-        "Por que mudar",
-        "Queria acompanhar o impacto das minhas entregas no produto. A troca de clientes, em ciclos de cerca de três meses, dificultava esse acompanhamento.",
+        "Troca frequente de clientes",
+        "Eu mudava de cliente em ciclos de cerca de três meses, o que dificultava acompanhar como as soluções eram usadas e o que poderia melhorar.",
       ],
       [
-        "O que eu buscava",
-        "Buscava uma empresa de produto para acompanhar dados, resultados e o impacto das minhas entregas ao longo do tempo.",
+        "Continuidade em um produto",
+        "Queria atuar em uma empresa de produto para usar dados, entender os resultados das minhas entregas e participar da evolução das soluções ao longo do tempo.",
       ],
     ],
     destination: "PRÓXIMA EMPRESA",
@@ -184,7 +184,7 @@ const pt = {
     intro: "AB InBev",
     role: "Software Engineer · Desde maio de 2022",
     summary:
-      "Desenvolvo produtos de e-commerce B2C em aplicações web, mobile e backend, com foco em arquitetura e experiência do usuário.",
+      "Contribuo para a evolução de produtos de e-commerce B2C em aplicações web, mobile e backend. Minha atuação abrange arquitetura, desenvolvimento, observabilidade, experimentação e dados.",
     projects: [
       ["Zé Delivery", "Cerca de 1 ano e 8 meses de atuação."],
       ["TaDa Delivery", "No projeto desde janeiro de 2024."],
@@ -555,16 +555,16 @@ const en = {
     accent: "changed companies.",
     rows: [
       [
-        "Focus on the user",
-        "I learned to look beyond board tasks and consider what each feature delivers for the end user.",
+        "Focus on delivery",
+        "The work centered on delivering projects, with little room to assess how features affected the user experience.",
       ],
       [
-        "Why move on",
-        "I wanted to follow the impact of my work on the product. Moving between clients in roughly three-month cycles made that difficult.",
+        "Frequent client changes",
+        "I moved between clients in roughly three-month cycles, which made it difficult to follow how solutions were used and what could be improved.",
       ],
       [
-        "What I was looking for",
-        "I was looking for a product company where I could follow data, results and the impact of my work over time.",
+        "Continuity within a product",
+        "I wanted to work at a product company where I could use data, understand the results of my work and help evolve solutions over time.",
       ],
     ],
     destination: "NEXT COMPANY",
@@ -576,7 +576,7 @@ const en = {
     intro: "AB InBev",
     role: "Software Engineer · Since May 2022",
     summary:
-      "I develop B2C e-commerce products across web, mobile and backend applications, with a focus on architecture and user experience.",
+      "I help evolve B2C e-commerce products across web, mobile and backend applications. My work spans architecture, development, observability, experimentation and data.",
     projects: [
       ["Zé Delivery", "About 1 year and 8 months on the project."],
       ["TaDa Delivery", "On the project since January 2024."],
