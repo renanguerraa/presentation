@@ -25,6 +25,7 @@ export function App() {
   const [fullscreen, setFullscreen] = useState(false);
   const [notice, setNotice] = useState('');
   const dialog = useRef(null);
+  const swipeStart = useRef(null);
   const previousSlide = useRef('inicio');
   const initialRender = useRef(true);
   const t = content[route.lang];
@@ -89,6 +90,25 @@ export function App() {
     } catch { setNotice(t.fullscreenError); }
     finally { clearTimeout(timeout); }
   };
+  const startSwipe = event => {
+    if (isSystem || menuOpen || settingsOpen || event.touches.length !== 1 || event.target.closest('button, a, input, textarea, select, dialog')) {
+      swipeStart.current = null;
+      return;
+    }
+    const touch = event.touches[0];
+    swipeStart.current = { x: touch.clientX, y: touch.clientY };
+  };
+  const finishSwipe = event => {
+    const start = swipeStart.current;
+    swipeStart.current = null;
+    if (!start || event.changedTouches.length !== 1) return;
+    const touch = event.changedTouches[0];
+    const deltaX = touch.clientX - start.x;
+    const deltaY = touch.clientY - start.y;
+    if (Math.abs(deltaX) < 56 || Math.abs(deltaX) < Math.abs(deltaY) * 1.25) return;
+    const destination = adjacentSlide(route.page, deltaX < 0 ? 1 : -1);
+    if (destination !== route.page) go(destination);
+  };
   const slides = {
     inicio: <Cover t={t} go={go} />, sobre: <About t={t} />, faculdade: <College t={t} />,
     'primeiro-emprego': <FirstJob t={t} />,
@@ -109,7 +129,7 @@ export function App() {
     </header>
     {!isSystem && route.page !== 'inicio' && <nav className="chapter-strip" aria-label={t.chapters}>{t.nav.map((item, i) => <button key={item.target} onClick={() => go(item.target)} aria-current={i === chapter ? 'step' : undefined}><span>{item.number}</span>{item.subtitle || item.title}</button>)}</nav>}
     {notice && <div className="notice" role="status"><p>{notice}</p><button className="icon-button" onClick={() => setNotice('')} aria-label={t.close}><XIcon size={20} /></button></div>}
-    <main id="main-content" className={`slide-stage ${route.page === 'inicio' ? 'slide-stage--cover' : ''}`}><div className="slide-enter" key={route.page}>{isSystem ? <DesignSystem t={t} accent={accent} back={() => go(previousSlide.current)} /> : slides[route.page]}</div></main>
+    <main id="main-content" className={`slide-stage ${route.page === 'inicio' ? 'slide-stage--cover' : ''}`} onTouchStart={startSwipe} onTouchEnd={finishSwipe} onTouchCancel={() => { swipeStart.current = null; }}><div className="slide-enter" key={route.page}>{isSystem ? <DesignSystem t={t} accent={accent} back={() => go(previousSlide.current)} /> : slides[route.page]}</div></main>
     {!isSystem && <footer className="slide-footer">
       <div className="progress-track" role="progressbar" aria-label={t.progress} aria-valuemin={1} aria-valuemax={slideOrder.length} aria-valuenow={index + 1}><span style={{ width: `${(index + 1) / slideOrder.length * 100}%` }} /></div>
       <div className="footer-row"><div className="footer-meta"><span className="slide-counter"><span>{String(index + 1).padStart(2, '0')}</span> / {slideOrder.length}</span></div><div className="footer-navigation"><button className="icon-button" disabled={index === 0} onClick={() => go(adjacentSlide(route.page, -1))} aria-label={t.previous}><ArrowLeftIcon weight="light" size={28} /></button><button className="icon-button" disabled={index === slideOrder.length - 1} onClick={() => go(adjacentSlide(route.page, 1))} aria-label={t.next}><ArrowRightIcon weight="light" size={28} /></button><span className="next-label">{index < slideOrder.length - 1 ? <>{t.nextLabel} <span>{t.slideNames[index + 1]}</span></> : t.closing.kicker}</span></div></div>

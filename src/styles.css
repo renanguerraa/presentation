@@ -336,7 +336,8 @@ code { font-family: var(--font-body); color: var(--color-muted); font-size: 12px
   .wordmark { font-size: 30px; }
   .header-actions { gap: 8px; }
   .language-switch button { min-width: 40px; padding-inline: 9px; font-size: 12px; }
-  .fullscreen-button { padding-left: 16px; margin-left: 4px; }
+  .fullscreen-button { display: none; }
+  .slide-stage { touch-action: pan-y; }
   .cover { display: flex; flex-direction: column; align-items: stretch; padding-block: 58px 36px; gap: 52px; }
   .hero-title { font-size: clamp(45px, 10.6vw, 72px); }
   .cover-copy > .eyebrow { font-size: 11px; margin-bottom: 22px; }

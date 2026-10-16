@@ -72,3 +72,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - O currículo fornecido em 14/09/2026 foi incorporado parcialmente em PT/EN. Consultar `docs/content-sources.md` para dados confirmados e lacunas; não inferir motivos de saída, promoções, datas exatas ou atribuições de métricas por projeto.
 - Configurações no cabeçalho reúnem idioma e cor de destaque. O azul #193CF5 é o padrão; a cor pode ser personalizada para cada empresa e deve persistir localmente. Atualizar os tokens derivados, preservando o fundo marfim e a tipografia.
 - A aba do navegador usa um favicon com “RG.” em Bodoni Moda, azul cobalto e marfim.
+- No mobile, ocultar o botão de tela cheia. Um gesto horizontal sobre o conteúdo avança a apresentação ao arrastar para a esquerda e volta ao arrastar para a direita, sem interceptar controles interativos.
