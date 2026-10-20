@@ -257,7 +257,7 @@ const pt = {
       ],
       achievement: "Pedidos com erro: de ≈ 4% para 0,3%",
       evidence:
-        "Participei da criação de um MCP que integrava New Relic, Amplitude e Jira. Com apoio de IA, cruzamos dados para rastrear débitos técnicos na captura de dados e na engenharia. Esse trabalho contribuiu para reduzir a taxa de pedidos com erro de aproximadamente 4% para 0,3%.",
+        "Identificamos o problema ao analisar os dados no Amplitude. Com apoio de IA, usamos um MCP conectado ao New Relic para mapear os erros e o Jira para facilitar a criação das tarefas de correção. Esse trabalho contribuiu para reduzir a taxa de pedidos com erro de aproximadamente 4% para 0,3%.",
     },
   ],
   labels: {
@@ -650,7 +650,7 @@ const en = {
       ],
       achievement: "Orders with errors: from ≈ 4% to 0.3%",
       evidence:
-        "I helped build an MCP that integrated New Relic, Amplitude and Jira. With AI support, we cross-referenced data to trace technical debt in data collection and engineering. This work contributed to reducing the rate of orders with errors from approximately 4% to 0.3%.",
+        "We identified the problem by analyzing data in Amplitude. With AI support, we used an MCP connected to New Relic to map the errors and Jira to simplify creating tasks to fix them. This work contributed to reducing the rate of orders with errors from approximately 4% to 0.3%.",
     },
   ],
   labels: {
