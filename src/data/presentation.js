@@ -338,7 +338,7 @@ const pt = {
         {
           tool: "Desenvolvimento com IA",
           title: "Aplicativo e APIs",
-          description: "Desenvolvi o aplicativo e as APIs com um fluxo guiado por IA, usando o contexto documentado nas etapas anteriores.",
+          description: "Desenvolvi o app e as APIs com SDD (Spec-Driven Development): especificações e critérios de aceite orientaram o planejamento das tarefas, a implementação com IA e a validação de cada entrega.",
         },
         {
           tool: "Produto e operação",
@@ -731,7 +731,7 @@ const en = {
         {
           tool: "AI-guided development",
           title: "App and APIs",
-          description: "I developed the app and APIs through an AI-guided workflow, using the context documented in the previous stages.",
+          description: "I developed the app and APIs using SDD (Spec-Driven Development): specifications and acceptance criteria guided task planning, AI-assisted implementation and validation of each result.",
         },
         {
           tool: "Product and operations",
