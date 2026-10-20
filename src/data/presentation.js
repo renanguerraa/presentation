@@ -244,7 +244,7 @@ const pt = {
         ],
         [
           "Consumer · Omnichannel",
-          "Passei a aplicar no Omnichannel os padrões de engenharia do Checkout, apoiando arquitetura, liderança técnica e observabilidade. Também estruturei e compartilhei práticas de IA, como Cursor Rules, para fornecer contexto preciso, reduzir o consumo de tokens e direcionar melhor as tarefas.",
+          "Passei a aplicar no Omnichannel os padrões de engenharia do Checkout, apoiando arquitetura, liderança técnica e observabilidade. Também estruturei e compartilhei práticas de IA com Cursor Rules e Skills para padronizar boas práticas do projeto, apoiar novos desenvolvimentos e tratar débitos técnicos. Essas práticas incluíram MCP para observabilidade e contextos mais precisos para reduzir o consumo de tokens.",
           "Início · 03/2026",
         ],
       ],
@@ -637,7 +637,7 @@ const en = {
         ],
         [
           "Consumer · Omnichannel",
-          "I began applying Checkout’s engineering standards in Omnichannel, supporting architecture, technical leadership and observability. I also structured and shared AI practices, such as Cursor Rules, to provide precise context, reduce token usage and better direct tasks.",
+          "I began applying Checkout’s engineering standards in Omnichannel, supporting architecture, technical leadership and observability. I also structured and shared AI practices using Cursor Rules and Skills to standardize project best practices, support new development and address technical debt. These practices included MCP for observability and more precise context to reduce token usage.",
           "Start · 03/2026",
         ],
       ],
